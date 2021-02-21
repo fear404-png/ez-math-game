@@ -1,3 +1,8 @@
+:root {
+  --mouseX: 0deg;
+  --mouseY: 0deg;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +39,7 @@ body {
   align-items: center;
 }
 .ez-math__points {
+  transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
   font-size: 64px;
   margin: 0;
 }
@@ -100,8 +106,9 @@ body {
   width: 30px;
 }
 
-#bst {
+#hp {
   height: 80%;
+  transition: all 0.4s ease 0s;
 }
 
 #lvl {
