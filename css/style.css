@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quantico", sans-serif;
+  background: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ez-math {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  color: #efe700;
+}
+.ez-math__body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 340px;
+}
+.ez-math__logo {
+  font-size: 64px;
+}
+.ez-math__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ez-math__points {
+  font-size: 64px;
+  margin: 0;
+}
+.ez-math__time-block {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  width: 340px;
+}
+.ez-math__timer {
+  font-size: 24px;
+}
+.ez-math__text-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 295px;
+  height: 45px;
+  background: black;
+  border: 2px solid #efe700;
+  font-size: 24px;
+}
+.ez-math__keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  border: 2px solid #efe700;
+  margin: 2px;
+  font-size: 24px;
+  transition: all 0.2s ease 0s;
+}
+.btn p {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #efe700;
+  color: black;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 200px;
+  height: 470px;
+  width: 63px;
+  border: 2px solid #efe700;
+}
+.bar__progress-scale {
+  background: #efe700;
+  width: 30px;
+}
+
+#bst {
+  height: 80%;
+}
+
+#lvl {
+  height: 20px;
+  transition: all 0.4s ease 0s;
+}

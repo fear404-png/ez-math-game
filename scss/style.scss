@@ -1,0 +1,125 @@
+$accent: #efe700;
+$bg: black;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quantico", sans-serif;
+  background: $bg;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ez-math {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  color: $accent;
+  //бар с информацией о уровне сложности игрока
+  //основное тело игры
+  &__body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 340px;
+  }
+
+  &__logo {
+    font-size: 64px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__points {
+    font-size: 64px;
+    margin: 0;
+  }
+
+  &__time-block {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    width: 340px;
+  }
+
+  &__timer {
+    font-size: 24px;
+  }
+
+  &__text-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 295px;
+    height: 45px;
+    background: $bg;
+    border: 2px solid $accent;
+    font-size: 24px;
+  }
+
+  &__keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: $bg;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  border: 2px solid $accent;
+  margin: 2px;
+  font-size: 24px;
+  transition: all 0.2s ease 0s;
+  p {
+    cursor: pointer;
+  }
+}
+
+.btn:hover {
+  background: $accent;
+  color: $bg;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 200px;
+  height: 470px;
+  width: 63px;
+  border: 2px solid $accent;
+  &__progress-scale {
+    background: $accent;
+    width: 30px;
+  }
+}
+
+#bst {
+  height: 80%;
+}
+
+#lvl {
+  height: 20px;
+  transition: all 0.4s ease 0s;
+}
