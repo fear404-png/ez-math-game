@@ -26,6 +26,7 @@ $(function () {
     $("p.ez-math__best-res").text(_bestTIme / 100 + "s");
     $(".ez-math__logo").click(function () {
       if (_logoCount != 5) {
+        _answer = 0;
         writeAnswer(_quest);
         _logoCount++;
       } else {
@@ -93,6 +94,40 @@ $(function () {
 
 //проверка ответа игрока
 function checkAnswer() {
+  if(Number(_answer) == 1337) {
+    $("p.ez-math__logo").text("LEET MATH");
+    //не ну тут ржакич хДДД
+    _logoCount = -99999;
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    lvlUp();
+    nextQuest();
+  }
   if (Number(_answer) == _quest) {
     _allResult.push(_time);
     _averageTime = Math.floor(averageСost(_allResult));
@@ -289,7 +324,7 @@ document.addEventListener("mousemove", function (e) {
 });
 
 function move(x, y) {
-  let wh = window.innerHeight / 2,
+  let wh = window.innerHeight / 3,
     ww = window.innerWidth / 2;
 
   document.body.style.setProperty("--mouseX", (x - ww) / 30 + "deg");

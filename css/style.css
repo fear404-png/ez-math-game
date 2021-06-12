@@ -42,6 +42,13 @@ body {
   transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
   font-size: 64px;
   margin: 0;
+  animation: blur 0.8s ease-out infinite;
+  text-shadow: 0 0 1px #efe700, 0 0 2px #efe700;
+}
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 1px #efe700, 0px 0px 10px #efe700, 0px 0px 25px #efe700;
+  }
 }
 .ez-math__time-block {
   display: flex;
